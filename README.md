@@ -53,7 +53,7 @@ We will use multiple testing methodologies:
    ```
 2. Navigate to the project directory:
    ```sh
-   cd ecommerce-testing
+   cd DEPI_Grad_Project_AutomationExerciseWebsite
    ```
 3. Install dependencies using Maven:
    ```sh

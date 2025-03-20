@@ -49,7 +49,7 @@ We will use multiple testing methodologies:
 ## Setup Instructions
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/ecommerce-testing.git
+   git clone https://github.com/MohamedHussien311/DEPI_Grad_Project_AutomationExerciseWebsite.git
    ```
 2. Navigate to the project directory:
    ```sh

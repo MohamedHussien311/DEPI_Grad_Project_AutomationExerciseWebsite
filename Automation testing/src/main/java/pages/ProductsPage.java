@@ -35,7 +35,7 @@ public class ProductsPage {
     private By addToCartButton1 = By.cssSelector("a[data-product-id='1']");
     private By addToCartButton2 = By.cssSelector("a[data-product-id='2']");
     private By continueShoppingButton = By.cssSelector("button[data-dismiss='modal']");
-    private By viewCartButton = By.cssSelector("a[href='/view_cart']");
+    private By viewCartButton = By.cssSelector("#cartModal a[href='/view_cart']");
     
     private By menCategory = By.cssSelector("a[href='#Men']");
     private By tShirtsCategory = By.cssSelector("a[href='/category_products/3']");
@@ -43,7 +43,7 @@ public class ProductsPage {
     private By poloBrand = By.cssSelector("a[href='/brand_products/Polo']");
     private By madameBrand = By.cssSelector("a[href='/brand_products/Madame']");
     private By addButtons = By.cssSelector("a[class='btn btn-default add-to-cart']");
-    
+    private By addProductToCartBtnBy = By.cssSelector(".btn.btn-default.add-to-cart");
     // Product containers
     private By productContainers = By.cssSelector(".product-image-wrapper");
 
@@ -98,7 +98,6 @@ public class ProductsPage {
     
 
     public ProductsPage hoverAndAddProductToCart(int productIndex) {
-        try {
             List<WebElement> products = driver.findElements(productContainers);
             if (productIndex >= 0 && productIndex < products.size()) {
                 WebElement product = products.get(productIndex);
@@ -110,15 +109,10 @@ public class ProductsPage {
   
                 WebElement addToCartButton = product.findElement(By.cssSelector("a.add-to-cart"));
                 wait.until(ExpectedConditions.visibilityOf(addToCartButton));
-
-                js.executeScript("arguments[0].click();", addToCartButton);
+                js.executeScript("arguments[0].click();", driver.findElement(addProductToCartBtnBy));
                 
                 return this;
             }
-        } catch (Exception e) {
-            System.out.println("Error in hoverAndAddProductToCart: " + e.getMessage());
-            e.printStackTrace();
-        }
         return this;
     }
 
@@ -137,14 +131,9 @@ public class ProductsPage {
     
 
     public void clickViewCart() {
-        try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(viewCartButton));
             WebElement viewCart = driver.findElement(viewCartButton);
             js.executeScript("arguments[0].click();", viewCart);
-        } catch (Exception e) {
-            System.out.println("Error in clickViewCart: " + e.getMessage());
-            e.printStackTrace();
-        }
     }
 
     public ProductsPage clickMenCategory() {

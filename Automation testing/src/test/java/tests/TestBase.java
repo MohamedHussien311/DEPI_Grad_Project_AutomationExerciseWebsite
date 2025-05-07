@@ -3,16 +3,18 @@ package tests;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import java.time.Duration;
 
 public class TestBase {
 	
-	protected WebDriver driver = new FirefoxDriver();
+	protected WebDriver driver; 
 	protected String baseURL = "https://automationexercise.com/";
     @BeforeTest
     public void openBrowser() {
+    	driver = new EdgeDriver();
     	driver.manage().window().maximize();
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  
     	driver.navigate().to(baseURL);

@@ -11,7 +11,7 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 	@DataProvider (name = "registerFullData")
 	public Object[][] userRegistrationFullData(){
 		Object testData[][]= new Object[][] {
-			{"OmarSaleh" , "omar21@gmail.com","456789", 25 , "11" , "2000", "Omar","Saleh","Orange","Cairo", "Giza",
+			{"OmarSaleh" , "omar4@gmail.com","456789", 25 , "11" , "2000", "Omar","Saleh","Orange","Cairo", "Giza",
 			"United States","New york","Manhatten","1230213","01105231222"} 
 		};
 		return testData;
@@ -19,7 +19,7 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 	@DataProvider (name ="registerBasicData")
 	public Object[][] userRegistrationBasicData(){
 		Object testData[][]= new Object[][] {
-			{"OmarSaleh" , "omar21@gmail.com","456789",  "Omar","Saleh","Cairo",
+			{"OmarSaleh" , "mohamedElaraby1@gmail.com","456789",  "Omar","Saleh","Cairo",
 			"United States","New york","Manhatten","1230213","01105231222"} 
 		};
 		return testData;
@@ -36,8 +36,7 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 	  registerObject.userCanRegister(name , email);
 	  Assert.assertEquals( registerObject.accountInfoMessage(),"ENTER ACCOUNT INFORMATION");
 	  
-	  registerObject.accountInformation
-	  ( password, day, month , year, firstName , lastName , company , address1,
+	  registerObject.accountInformation(password, day, month , year, firstName , lastName , company , address1,
 			address2 , country , state , city ,zipCode , mobileNumber);
 	  Assert.assertEquals("ACCOUNT CREATED!", registerObject.successMessage());
 	  

@@ -64,8 +64,7 @@ public class HomePage {
         WebElement emailField = driver.findElement(emailInput);
         emailField.clear();
         emailField.sendKeys(emailAddress);
-        WebElement button = driver.findElement(subscribeButton);
-        button.click();
+        driver.findElement(subscribeButton).click();
         return this;
     }
 
@@ -75,8 +74,7 @@ public class HomePage {
 
     public HomePage addProductToCartByIndex(int productIndex) {
         By productAddToCartButton = By.xpath(String.format("//button[@data-product-id='%d']", productIndex));
-        WebElement addToCartBtn = driver.findElement(productAddToCartButton);
-        addToCartBtn.click();
+        driver.findElement(productAddToCartButton).click();
         return this;
     }
 

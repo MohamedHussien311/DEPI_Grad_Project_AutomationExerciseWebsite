@@ -144,6 +144,7 @@ public class RegisterPage {
 		return wait.until (ExpectedConditions.visibilityOfElementLocated(successMessage)).getText();
 	}
 	public void continueButton() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(continueBtn));
 		driver.findElement(continueBtn).click();
 	}
 	public String loggedMessage () {

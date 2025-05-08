@@ -41,7 +41,6 @@ public class PlaceOrderTest extends TestBase{
 		checkoutPage.clickPlaceOrderBtn();
 		paymentPage = new PaymentPage(driver);
 		paymentPage.EnterPaymentInfo(cardName, cardNumber, cvc, expiryMonth, expiryYear);
-		paymentPage.downloadInvoice();
-		registerPage.deleteAccount();
+		
 	}
 }

@@ -1,0 +1,18 @@
+<suite name = "Automation-Exercise Regression suite">
+    <test name = "Regression test" preserve-order = "true">
+        <classes>
+            <class name = "tests.add_products_in_cart"/>
+            <class name = "tests.AddReviewTest"/>
+            <class name = "tests.ContactUs"/>
+            <class name = "tests.LoginTest_Happy_And_Negative_Scenario"/>
+            <class name = "tests.PlaceOrderTest"/>
+            <class name = "tests.remove_products_from_cart"/>
+            <class name = "tests.ResgisterTests_HappyAndNegative"/>
+            <class name = "tests.SearchProduct"/>
+            <class name = "tests.verify_product_quantity_in_cart"/>
+            <class name = "tests.verify_subscription_in_cart_page"/>
+            <class name = "tests.VerifyAllProduct"/>
+            <class name = "tests.VerifyTestCasesPage"/>
+        </classes>
+    </test>
+</suite>

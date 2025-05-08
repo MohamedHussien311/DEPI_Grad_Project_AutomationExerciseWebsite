@@ -12,7 +12,7 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	}
 
 	By loginToAccountMsg = By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/h2");

@@ -8,12 +8,91 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">72,270</td><td></td><td></td></tr>
+<tr><th colspan="8">Automation-Exercise Regression suite</th></tr>
+<tr><td><a href="#t0">Regression test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">14</td><td class="num">18,132</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.VerifyScroll</td><td><a href="#m0">ScrollUPDwonUsingArrowbutton</a></td><td rowspan="1">1746654242285</td><td rowspan="1">589</td></tr><tr class="passedeven"><td><a href="#m1">ScrollUPDwonWithoutUsingArrowbutton</a></td><td rowspan="1">1746654242884</td><td rowspan="1">131</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation-Exercise Regression suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.AddReviewTest</td><td><a href="#m0">addReview</a></td><td rowspan="1">1746743304362</td><td rowspan="1">16</td></tr><tr class="failedodd"><td rowspan="1">tests.ContactUs</td><td><a href="#m1">UserCanContactUs</a></td><td rowspan="1">1746743304392</td><td rowspan="1">94</td></tr><tr class="failedeven"><td rowspan="3">tests.LoginTest_Happy_And_Negative_Scenario</td><td><a href="#m2">LoginTest_HappyScenario</a></td><td rowspan="1">1746743304502</td><td rowspan="1">12</td></tr><tr class="failedeven"><td><a href="#m3">LoginTest_NegativeScenario</a></td><td rowspan="2">1746743304517</td><td rowspan="2">9</td></tr><tr class="failedeven"><td><a href="#m4">LoginTest_NegativeScenario</a></td></tr><tr class="failedodd"><td rowspan="1">tests.PlaceOrderTest</td><td><a href="#m5">userCanCheckoutOrder</a></td><td rowspan="1">1746743304533</td><td rowspan="1">38</td></tr><tr class="failedeven"><td rowspan="2">tests.ResgisterTests_HappyAndNegative</td><td><a href="#m6">Register_Test_HappyScenarioBasicData</a></td><td rowspan="1">1746743304605</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m7">Register_Test_HappyScenarioFullData</a></td><td rowspan="1">1746743304587</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="1">tests.SearchProduct</td><td><a href="#m8">searchProduct</a></td><td rowspan="1">1746743304627</td><td rowspan="1">7</td></tr><tr class="failedeven"><td rowspan="1">tests.VerifyAllProduct</td><td><a href="#m9">verifyAllProducts</a></td><td rowspan="1">1746743304689</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="1">tests.VerifyTestCasesPage</td><td><a href="#m10">TestCasesPageExist</a></td><td rowspan="1">1746743304696</td><td rowspan="1">3</td></tr><tr class="failedeven"><td rowspan="1">tests.remove_products_from_cart</td><td><a href="#m11">removeProductsFromCart</a></td><td rowspan="1">1746743304571</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">tests.verify_product_quantity_in_cart</td><td><a href="#m12">verifyProductQuantityInCart</a></td><td rowspan="1">1746743304640</td><td rowspan="1">27</td></tr><tr class="failedeven"><td rowspan="1">tests.verify_subscription_in_cart_page</td><td><a href="#m13">verifySubscriptionInCartPage</a></td><td rowspan="1">1746743304676</td><td rowspan="1">5</td></tr><tr><th colspan="4">Regression test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.ResgisterTests_HappyAndNegative</td><td><a href="#m14">RegisterTest_Negative_Scenario</a></td><td rowspan="1">1746743304605</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.add_products_in_cart</td><td><a href="#m15">addProductsInCart</a></td><td rowspan="1">1746743297957</td><td rowspan="1">6306</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.VerifyScroll#ScrollUPDwonUsingArrowbutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.VerifyScroll#ScrollUPDwonWithoutUsingArrowbutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression test</h2><h3 id="m0">tests.AddReviewTest#addReview</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:64)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:67)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:63)
+	at pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at tests.AddReviewTest.addReview(AddReviewTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ContactUs#UserCanContactUs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openContactUsPage(HomePage.java:49)
+	at tests.ContactUs.UserCanContactUs(ContactUs.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginTest_Happy_And_Negative_Scenario#LoginTest_HappyScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>omar12@yahoo.com</td><td>987654</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openLoginPage(HomePage.java:45)
+	at tests.LoginTest_Happy_And_Negative_Scenario.LoginTest_HappyScenario(LoginTest_Happy_And_Negative_Scenario.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTest_Happy_And_Negative_Scenario#LoginTest_NegativeScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>omar12@yahoo.com</td><td>98765</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openLoginPage(HomePage.java:45)
+	at tests.LoginTest_Happy_And_Negative_Scenario.LoginTest_NegativeScenario(LoginTest_Happy_And_Negative_Scenario.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest_Happy_And_Negative_Scenario#LoginTest_NegativeScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>omar1@yahoo.com</td><td>987654</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openLoginPage(HomePage.java:45)
+	at tests.LoginTest_Happy_And_Negative_Scenario.LoginTest_NegativeScenario(LoginTest_Happy_And_Negative_Scenario.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.PlaceOrderTest#userCanCheckoutOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr><tr class="param stripe"><td>OmarSaleh</td><td>mohamedElaraby1@gmail.com</td><td>456789</td><td>Omar</td><td>Saleh</td><td>Cairo</td><td>United States</td><td>New york</td><td>Manhatten</td><td>1230213</td><td>01105231222</td></tr><tr><th colspan="11">Exception</th></tr><tr><td colspan="11"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openProductsPage(HomePage.java:57)
+	at tests.PlaceOrderTest.userCanCheckoutOrder(PlaceOrderTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.ResgisterTests_HappyAndNegative#Register_Test_HappyScenarioBasicData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr><tr class="param stripe"><td>OmarSaleh</td><td>mohamedElaraby1@gmail.com</td><td>456789</td><td>Omar</td><td>Saleh</td><td>Cairo</td><td>United States</td><td>New york</td><td>Manhatten</td><td>1230213</td><td>01105231222</td></tr><tr><th colspan="11">Exception</th></tr><tr><td colspan="11"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openRegisterationPage(HomePage.java:41)
+	at tests.ResgisterTests_HappyAndNegative.Register_Test_HappyScenarioBasicData(ResgisterTests_HappyAndNegative.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.ResgisterTests_HappyAndNegative#Register_Test_HappyScenarioFullData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th></tr><tr class="param stripe"><td>OmarSaleh</td><td>omar4@gmail.com</td><td>456789</td><td>25</td><td>11</td><td>2000</td><td>Omar</td><td>Saleh</td><td>Orange</td><td>Cairo</td><td>Giza</td><td>United States</td><td>New york</td><td>Manhatten</td><td>1230213</td><td>01105231222</td></tr><tr><th colspan="16">Exception</th></tr><tr><td colspan="16"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openRegisterationPage(HomePage.java:41)
+	at tests.ResgisterTests_HappyAndNegative.Register_Test_HappyScenarioFullData(ResgisterTests_HappyAndNegative.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.SearchProduct#searchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:64)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:67)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:63)
+	at pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at tests.SearchProduct.searchProduct(SearchProduct.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.VerifyAllProduct#verifyAllProducts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;this.driver&quot; is null
+	at tests.VerifyAllProduct.verifyAllProducts(VerifyAllProduct.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.VerifyTestCasesPage#TestCasesPageExist</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at pages.HomePage.openTestCasesPage(HomePage.java:37)
+	at tests.VerifyTestCasesPage.TestCasesPageExist(VerifyTestCasesPage.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.remove_products_from_cart#removeProductsFromCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;this.driver&quot; is null
+	at tests.remove_products_from_cart.removeProductsFromCart(remove_products_from_cart.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.verify_product_quantity_in_cart#verifyProductQuantityInCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Driver must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:64)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:67)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:63)
+	at pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at tests.verify_product_quantity_in_cart.verifyProductQuantityInCart(verify_product_quantity_in_cart.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.verify_subscription_in_cart_page#verifySubscriptionInCartPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;this.driver&quot; is null
+	at tests.verify_subscription_in_cart_page.verifySubscriptionInCartPage(verify_subscription_in_cart_page.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.ResgisterTests_HappyAndNegative#RegisterTest_Negative_Scenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.ResgisterTests_HappyAndNegative.RegisterTest_Negative_Scenario() on instance tests.ResgisterTests_HappyAndNegative@32115b28 depends on not successfully finished methods 
+[tests.ResgisterTests_HappyAndNegative.Register_Test_HappyScenarioBasicData() on instance tests.ResgisterTests_HappyAndNegative@32115b28]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.add_products_in_cart#addProductsInCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

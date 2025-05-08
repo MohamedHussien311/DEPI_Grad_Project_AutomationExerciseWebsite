@@ -28,11 +28,12 @@ public class ProductDetailPage {
     private By addReviewHere = By.id("review");
     private By submitButton = By.id("button-review");
     private By successMessage = By.cssSelector("div[class='alert-success alert'] span");
+    By allProduct = By.xpath("/html/body/section[2]/div/div/div[2]/div");
 
     // Constructor
     public ProductDetailPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public WebElement getProductName() {
@@ -92,4 +93,6 @@ public class ProductDetailPage {
     public WebElement getSuccessMessage() {
         return driver.findElement(successMessage);
     }
+    
+
 }

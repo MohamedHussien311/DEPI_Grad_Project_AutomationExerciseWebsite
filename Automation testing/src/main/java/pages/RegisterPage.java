@@ -15,7 +15,7 @@ public class RegisterPage {
 	private WebDriver driver;	
 	public RegisterPage (WebDriver driver) {
 	        this.driver = driver;
-			this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    }
 	By newUserMessage = By.cssSelector("#form > div > div > div:nth-child(3) > div > h2");
 	By nameTxt = By.name("name");

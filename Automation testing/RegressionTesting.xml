@@ -1,5 +1,6 @@
-<suite name = "Automation-Exercise Regression suite">
-    <test name = "Regression test" parallel="false">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "Automation-Exercise Regression suite" parallel="false">
+    <test name = "Regression test" >
         <classes>
             <class name = "tests.add_products_in_cart"/>
             <class name = "tests.AddReviewTest"/>

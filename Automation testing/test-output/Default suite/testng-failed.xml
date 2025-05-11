@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PlaceOrderTest">
+      <class name="tests.VerifyScroll">
         <methods>
-          <include name="userCanCheckoutOrder" invocation-numbers="0"/>
+          <include name="ScrollUPDwonUsingArrowbutton"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.PlaceOrderTest -->
+      </class> <!-- tests.VerifyScroll -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

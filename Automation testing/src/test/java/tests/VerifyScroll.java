@@ -1,16 +1,8 @@
 package tests;
 
 import org.testng.annotations.Test;
-
-import pages.HomePage;
 import pages.ProductsPage;
-
-import org.testng.annotations.BeforeClass;
-
 import static org.testng.Assert.assertEquals;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 
 public class VerifyScroll extends TestBase {
 	

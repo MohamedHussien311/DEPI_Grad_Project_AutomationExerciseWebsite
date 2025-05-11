@@ -19,7 +19,7 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 	@DataProvider (name ="registerBasicData")
 	public Object[][] userRegistrationBasicData(){
 		Object testData[][]= new Object[][] {
-			{"OmarSaleh" , "mohamedElaraby1@gmail.com","456789",  "Omar","Saleh","Cairo",
+			{"OmarSaleh" , "mohamedElaraby5@gmail.com","456789",  "Omar","Saleh","Cairo",
 			"United States","New york","Manhatten","1230213","01105231222"} 
 		};
 		return testData;

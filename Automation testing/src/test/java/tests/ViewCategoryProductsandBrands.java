@@ -1,18 +1,8 @@
 package tests;
 
 import org.testng.annotations.Test;
-
-import pages.HomePage;
 import pages.ProductsPage;
-
-import org.testng.annotations.BeforeClass;
-
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-
 public class ViewCategoryProductsandBrands extends TestBase   {
  
 	ProductsPage ProductObject;

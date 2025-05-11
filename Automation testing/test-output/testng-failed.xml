@@ -1,88 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Automation-Exercise Regression suite]">
-  <test thread-count="5" name="Regression test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.remove_products_from_cart">
+      <class name="tests.VerifyScroll">
         <methods>
-          <include name="removeProductsFromCart"/>
+          <include name="ScrollUPDwonUsingArrowbutton"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.remove_products_from_cart -->
-      <class name="tests.ContactUs">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="UserCanContactUs"/>
-        </methods>
-      </class> <!-- tests.ContactUs -->
-      <class name="tests.SearchProduct">
-        <methods>
-          <include name="searchProduct"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.SearchProduct -->
-      <class name="tests.LoginTest_Happy_And_Negative_Scenario">
-        <methods>
-          <include name="LoginTest_NegativeScenario" invocation-numbers="0 1"/>
-          <include name="LoginTest_HappyScenario" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.LoginTest_Happy_And_Negative_Scenario -->
-      <class name="tests.AddReviewTest">
-        <methods>
-          <include name="addReview"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.AddReviewTest -->
-      <class name="tests.PlaceOrderTest">
-        <methods>
-          <include name="userCanCheckoutOrder" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.PlaceOrderTest -->
-      <class name="tests.ResgisterTests_HappyAndNegative">
-        <methods>
-          <include name="Register_Test_HappyScenarioFullData" invocation-numbers="0"/>
-          <include name="RegisterTest_Negative_Scenario"/>
-          <include name="Register_Test_HappyScenarioBasicData" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.ResgisterTests_HappyAndNegative -->
-      <class name="tests.VerifyTestCasesPage">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="TestCasesPageExist"/>
-        </methods>
-      </class> <!-- tests.VerifyTestCasesPage -->
-      <class name="tests.verify_subscription_in_cart_page">
-        <methods>
-          <include name="verifySubscriptionInCartPage"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.verify_subscription_in_cart_page -->
-      <class name="tests.verify_product_quantity_in_cart">
-        <methods>
-          <include name="verifyProductQuantityInCart"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.verify_product_quantity_in_cart -->
-      <class name="tests.VerifyAllProduct">
-        <methods>
-          <include name="verifyAllProducts"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.VerifyAllProduct -->
+      </class> <!-- tests.VerifyScroll -->
     </classes>
-  </test> <!-- Regression test(failed) -->
-</suite> <!-- Failed suite [Automation-Exercise Regression suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

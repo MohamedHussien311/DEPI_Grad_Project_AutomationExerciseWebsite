@@ -1,5 +1,5 @@
 <suite name = "Automation-Exercise Regression suite">
-    <test name = "Regression test" preserve-order = "true">
+    <test name = "Regression test" parallel="false">
         <classes>
             <class name = "tests.add_products_in_cart"/>
             <class name = "tests.AddReviewTest"/>
@@ -9,10 +9,14 @@
             <class name = "tests.remove_products_from_cart"/>
             <class name = "tests.ResgisterTests_HappyAndNegative"/>
             <class name = "tests.SearchProduct"/>
+            <class name = "tests.SearchProductsandVerifyCartAfterLogin"/>
             <class name = "tests.verify_product_quantity_in_cart"/>
             <class name = "tests.verify_subscription_in_cart_page"/>
+            <class name = "tests.verify_subscription_in_home_page"/>
             <class name = "tests.VerifyAllProduct"/>
             <class name = "tests.VerifyTestCasesPage"/>
+            <class name = "tests.VerifyScroll"/>
+            <class name = "tests.ViewCategoryProductsandBrands"/>
         </classes>
     </test>
 </suite>

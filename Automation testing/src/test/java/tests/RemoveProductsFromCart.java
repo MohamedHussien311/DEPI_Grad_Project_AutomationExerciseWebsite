@@ -10,7 +10,7 @@ import pages.ProductsPage;
 
 import java.util.List;
 
-public class remove_products_from_cart extends TestBase {
+public class RemoveProductsFromCart extends TestBase {
     HomePage homePage;
     ProductsPage productsPage;
     CartPage cartPage;

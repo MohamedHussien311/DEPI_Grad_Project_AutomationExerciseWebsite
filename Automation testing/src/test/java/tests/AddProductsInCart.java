@@ -7,7 +7,7 @@ import pages.CartPage;
 import pages.HomePage;
 import pages.ProductsPage;
 
-public class add_products_in_cart extends TestBase {
+public class AddProductsInCart extends TestBase {
 
     HomePage homePage;
     ProductsPage productsPage;

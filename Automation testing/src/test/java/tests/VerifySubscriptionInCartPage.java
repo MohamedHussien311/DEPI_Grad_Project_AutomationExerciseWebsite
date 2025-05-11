@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.CartPage;
 import pages.HomePage;
 
-public class verify_subscription_in_cart_page extends TestBase {
+public class VerifySubscriptionInCartPage extends TestBase {
 
     HomePage homePage;
     CartPage cartPage;

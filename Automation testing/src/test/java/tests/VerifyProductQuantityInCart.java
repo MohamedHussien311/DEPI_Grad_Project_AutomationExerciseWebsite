@@ -7,7 +7,7 @@ import pages.ProductDetailPage;
 import pages.ProductsPage;
 import pages.CartPage;
 
-public class verify_product_quantity_in_cart extends TestBase {
+public class VerifyProductQuantityInCart extends TestBase {
     
     HomePage homePage;
     ProductsPage productsPage;

@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Automation-Exercise Regression suite]">
+<suite name="Failed suite [Automation-Exercise Regression suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Regression test(failed)">
     <classes>
-      <class name="tests.remove_products_from_cart">
+      <class name="tests.VerifySubscriptionInCartPage">
         <methods>
-          <include name="removeProductsFromCart"/>
+          <include name="verifySubscriptionInCartPage"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.remove_products_from_cart -->
-      <class name="tests.ContactUs">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="UserCanContactUs"/>
-        </methods>
-      </class> <!-- tests.ContactUs -->
-      <class name="tests.SearchProduct">
-        <methods>
-          <include name="searchProduct"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.SearchProduct -->
-      <class name="tests.LoginTest_Happy_And_Negative_Scenario">
-        <methods>
-          <include name="LoginTest_NegativeScenario" invocation-numbers="0 1"/>
-          <include name="LoginTest_HappyScenario" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- tests.LoginTest_Happy_And_Negative_Scenario -->
+      </class> <!-- tests.VerifySubscriptionInCartPage -->
       <class name="tests.AddReviewTest">
         <methods>
           <include name="addReview"/>
@@ -46,6 +24,64 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- tests.PlaceOrderTest -->
+      <class name="tests.VerifySubscriptionInHomePage">
+        <methods>
+          <include name="verifySubscriptionInHomePage"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifySubscriptionInHomePage -->
+      <class name="tests.VerifyAllProduct">
+        <methods>
+          <include name="verifyAllProducts"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyAllProduct -->
+      <class name="tests.LoginTest_Happy_And_Negative_Scenario">
+        <methods>
+          <include name="LoginTest_NegativeScenario" invocation-numbers="0 1"/>
+          <include name="LoginTest_HappyScenario" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTest_Happy_And_Negative_Scenario -->
+      <class name="tests.VerifyTestCasesPage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="TestCasesPageExist"/>
+        </methods>
+      </class> <!-- tests.VerifyTestCasesPage -->
+      <class name="tests.VerifyScroll">
+        <methods>
+          <include name="ScrollUPDwonUsingArrowbutton"/>
+          <include name="ScrollUPDwonWithoutUsingArrowbutton"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyScroll -->
+      <class name="tests.RemoveProductsFromCart">
+        <methods>
+          <include name="removeProductsFromCart"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.RemoveProductsFromCart -->
+      <class name="tests.VerifyProductQuantityInCart">
+        <methods>
+          <include name="verifyProductQuantityInCart"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyProductQuantityInCart -->
+      <class name="tests.SearchProductsandVerifyCartAfterLogin">
+        <methods>
+          <include name="Shearch"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.SearchProductsandVerifyCartAfterLogin -->
       <class name="tests.ResgisterTests_HappyAndNegative">
         <methods>
           <include name="Register_Test_HappyScenarioFullData" invocation-numbers="0"/>
@@ -55,34 +91,29 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- tests.ResgisterTests_HappyAndNegative -->
-      <class name="tests.VerifyTestCasesPage">
+      <class name="tests.ViewCategoryProductsandBrands">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="TestCasesPageExist"/>
-        </methods>
-      </class> <!-- tests.VerifyTestCasesPage -->
-      <class name="tests.verify_subscription_in_cart_page">
-        <methods>
-          <include name="verifySubscriptionInCartPage"/>
+          <include name="WomenCategory"/>
+          <include name="MenCategory"/>
+          <include name="Brands"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.verify_subscription_in_cart_page -->
-      <class name="tests.verify_product_quantity_in_cart">
+      </class> <!-- tests.ViewCategoryProductsandBrands -->
+      <class name="tests.SearchProduct">
         <methods>
-          <include name="verifyProductQuantityInCart"/>
+          <include name="searchProduct"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.verify_product_quantity_in_cart -->
-      <class name="tests.VerifyAllProduct">
+      </class> <!-- tests.SearchProduct -->
+      <class name="tests.ContactUs">
         <methods>
-          <include name="verifyAllProducts"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
+          <include name="UserCanContactUs"/>
         </methods>
-      </class> <!-- tests.VerifyAllProduct -->
+      </class> <!-- tests.ContactUs -->
     </classes>
   </test> <!-- Regression test(failed) -->
 </suite> <!-- Failed suite [Automation-Exercise Regression suite] -->

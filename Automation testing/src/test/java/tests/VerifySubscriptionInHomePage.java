@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
-public class verify_subscription_in_home_page extends TestBase {
+public class VerifySubscriptionInHomePage extends TestBase {
 
     HomePage homePage;
 

@@ -8,8 +8,8 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginTest_Happy_And_Negative_Scenario extends TestBase {
-	HomePage homeObject = new HomePage (driver);
-	LoginPage loginObject = new LoginPage (driver);
+	HomePage homeObject;
+	LoginPage loginObject;
 
 	@DataProvider (name = "loginDataHappy")
 	public Object[][] userLoginData(){
@@ -29,8 +29,9 @@ public class LoginTest_Happy_And_Negative_Scenario extends TestBase {
 	
   @Test (priority = 1 , dataProvider = "loginDataHappy")
   public void LoginTest_HappyScenario(String email , String password ) {
+	  homeObject = new HomePage (driver);
 	  homeObject.openLoginPage();
-	  
+	  loginObject = new LoginPage (driver);
 	  Assert.assertEquals("Login to your account", loginObject.loginToAccountMsg());
 	  loginObject.userCanLogin(email, password);
 	
@@ -41,9 +42,10 @@ public class LoginTest_Happy_And_Negative_Scenario extends TestBase {
 	  }
   @Test (priority = 2 , dataProvider = "loginDataNegative")
   public void LoginTest_NegativeScenario(String email , String password ) {
+	  homeObject = new HomePage (driver);
 	  homeObject.openLoginPage();
 	  Assert.assertEquals("Login to your account", loginObject.loginToAccountMsg());
-	  
+	  loginObject = new LoginPage (driver);
 	  loginObject.userCanLogin(email , password);
 	  Assert.assertEquals("Your email or password is incorrect!", loginObject.failedMessage());
 	  

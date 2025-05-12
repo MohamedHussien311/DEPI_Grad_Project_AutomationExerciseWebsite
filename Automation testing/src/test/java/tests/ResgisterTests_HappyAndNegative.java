@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.RegisterPage;
 public class ResgisterTests_HappyAndNegative extends TestBase {
-	HomePage homeObject = new HomePage (driver);
-	RegisterPage registerObject = new RegisterPage (driver);
+	HomePage homeObject;
+	RegisterPage registerObject;
 	@DataProvider (name = "registerFullData")
 	public Object[][] userRegistrationFullData(){
 		Object testData[][]= new Object[][] {
@@ -29,8 +29,9 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 			 String firstName , String lastName , String company , String address1,
 			 String address2 , String country , String state , String city ,
 			 String zipCode , String mobileNumber) {
-	  
+	  homeObject = new HomePage (driver);
 	  homeObject.openRegisterationPage(); 
+	  registerObject = new RegisterPage (driver);
 	  Assert.assertEquals("New User Signup!" , registerObject.newUserMessage());
 	  
 	  registerObject.userCanRegister(name , email);
@@ -52,10 +53,10 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 			 String firstName , String lastName  , String address1,
 			 String country , String state , String city ,
 			 String zipCode , String mobileNumber) {
-	  
+	  homeObject = new HomePage (driver);
 	  homeObject.openRegisterationPage();  
 	  Assert.assertEquals("New User Signup!" , registerObject.newUserMessage());
-	  
+	  registerObject = new RegisterPage (driver);
 	  registerObject.userCanRegister(name , email);  
 	  Assert.assertEquals( registerObject.accountInfoMessage(),"ENTER ACCOUNT INFORMATION");
 	  
@@ -73,10 +74,11 @@ public class ResgisterTests_HappyAndNegative extends TestBase {
 }
   @Test (priority = 3, dependsOnMethods = "Register_Test_HappyScenarioBasicData" )
   public void RegisterTest_Negative_Scenario() {
-	  
+	  homeObject = new HomePage (driver);
 	  homeObject.openRegisterationPage(); 
 	  Assert.assertEquals("New User Signup!" , registerObject.newUserMessage());
 	  String name = "OmarSaleh";
+	  registerObject = new RegisterPage (driver);
 	  registerObject.userCanRegister(name , "Omar@gmail.com");
 	  Assert.assertEquals("Email Address already exist!", registerObject.failedMessage());
   } 

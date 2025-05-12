@@ -16,11 +16,11 @@ public class TestBase {
     public void openBrowser() {
     	driver = new EdgeDriver();
     	driver.manage().window().maximize();
-    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));  
     	driver.navigate().to(baseURL);
     }
 
-    @AfterClass
+   @AfterClass
     public void closeBrowser() {
     	driver.quit();
     }
